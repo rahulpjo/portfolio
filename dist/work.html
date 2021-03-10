@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Work</title>
+    <link rel="icon" href="img/LOGO.svg">
+    <!-- JavaScript Bundle with Popper -->
+    
+    <style>
+        h2{
+            margin-top: 2vh;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait">
+                </div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item dropdown current">
+                    <a href="work.html" class="nav-link">Work</a>
+                    <ul class="dropdown-list hide">
+                        <li class="nav-item"><a href="work.html" class="nav-link">ART</a></li>
+                        <li class="nav-item"><a href="work.html" class="nav-link">DESIGN</a></li>
+                        <li class="nav-item"><a href="work.html" class="nav-link">ENGINEERING</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="leaveMessage">
+            <div class="leaveMessage-box">
+                <h2>You're about to leave the site!</h2>
+                <p>Are you sure you want to leave?</p>
+                <a href="https://dcon-4-merchandise.myshopify.com/" class="nav-link redlink">Open Link</a>
+                <a href="https://dcon-4-merchandise.myshopify.com/" target="_none" class="nav-link greenlink">Open Link in New Tab</a>
+                <a class="nav-link bluelink">Cancel</a>
+            </div>
+        </div>
+    </header>
+    
+    <main id="main">
+        <h1 class="page-title">Work</h1>
+        <h4 class="page-subtitle">EXPERIENCE AND PROJECTS</h4>
+        
+        <div class="container">
+            <h1 class="work-title">Projects</h1>
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">ENGINEERING</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">ART</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">DESIGN</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="container">
+                        <div class="card-group">
+                            <div class="row row-cols-2 row-cols-lg-3 g-4">
+                                <div class="col">
+                                    <div class="card h-100 text-center">
+                                        <img class="card-img-top" src="img/TaskManager.gif" alt="Task Manager Project"/>
+                                        <h5 class="card-title">Task Tracker</h5>
+                                        <div class="card-body">
+                                            <p class="card-text">Project created to learn about React framework. The application implements hooks, routing, and a mock back-end with JSON Server.
+                                                Emphasis was placed on keeping it as a single-page application (no refreshes occur throughout usage of the app).</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="https://github.com/rahulpjo/react-task-tracker" target="_none" class="card-link">GITHUB</a>
+                                            <a href="#" class="card-link">SITE LINK</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 text-center">
+                                        <img class="card-img-top" src="img/DCON4.gif" alt="D Con-4 Online Program Website">
+                                        <h5 class="card-title">D Con-4 Online Program Website</h5>
+                                        <div class="card-body">
+                                            <p class="card-text">Website created using HTML, Sass, and JavaScript. Node-sass used to compile Sass to a single CSS file. Bootstrap used 
+                                                for some page formatting, but mostly done using HTML/CSS. Also incorporates UI/UX design fundamentals.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="https://github.com/rahulpjo/DCon4Site" target="_none" class="card-link">GITHUB</a>
+                                            <a href="#" class="card-link">SITE LINK</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 text-center">
+                                        <img class="card-img-top" src="img/MovieDB.gif" alt="Movie Database Project">
+                                        <h5 class="card-title">Movie Database</h5>
+                                        <div class="card-body">
+                                            <p class="card-text">Project created to practice API calls using ajax function in JavaScript and parsing JSON. Landing page displays now playing movies and search bar will search for all movies with the key 
+                                                word. Project also focused on being responsive by using Bootstrap.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="https://github.com/rahulpjo/movie-db" class="card-link">GITHUB</a>
+                                            <a href="#" class="card-link">SITE LINK</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 text-center">
+                                        <img class="card-img-top" src="img/MERN.gif" alt="Task Manager Project">
+                                        <h5 class="card-title">MERN Stack E-Commerce App</h5>
+                                        <div class="card-body">
+                                            <p class="card-text">Project made to learn about the MERN stack (MongoDB, Express, React, Node.js) and increase practice with
+                                            the React framework. The project is still in production and is being done by learning from Brad Traversy on Udemy.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="card-link">GITHUB</a>
+                                            <a href="#" class="card-link">SITE LINK</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 text-center">
+                                        <img class="card-img-top" src="img/CC.gif" alt="D Con-4 Online Program Website">
+                                        <h5 class="card-title">Mock Company Website</h5>
+                                        <div class="card-body">
+                                            <p class="card-text">Website created using simple HTML/CSS, as well as implementing Bootstrap. Project built familiarity with Bootstrap components like Navbar, Cards, and more.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="card-link">GITHUB</a>
+                                            <a href="#" class="card-link">SITE LINK</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 text-center">
+                                        <img class="card-img-top" src="img/MovieDB.gif" alt="Movie Database Project">
+                                        <h5 class="card-title">Portfolio</h5>
+                                        <div class="card-body">
+                                            <p class="card-text">Website created with D Con-4 project as skeleten (therefore also using HTML, Sass, and JavaScript as well as using Node-sass to compile Sass to CSS). Includes implementation of GSAP for animation.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="card-link">GITHUB</a>
+                                            <a href="#" class="card-link">SITE LINK</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><div class="container">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img class="card-img-top" src="img/QAM.gif" alt="Task Manager Project" />
+                                <h5 class="card-title">Quitas and Moris</h5>
+                                <div class="card-body">
+                                    <p class="card-text">A concept dance film about two beings that live vicariously through one another. Full story explained in YouTube bio.</p>
+                                    <p class="card-text"><strong>Roles:</strong> Artistic Director, Choreographer, Performer, Video Editor</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://youtu.be/-qMp2ZmfFcQ" target="_none" class="card-link">LINK TO FULL VIDEO</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img class="card-img-top" src="img/TCP-S.gif" alt="D Con-4 Online Program Website">
+                                <h5 class="card-title">Stargazer</h5>
+                                <div class="card-body">
+                                    <p class="card-text">A dance set about ambition and pushing past limitations by The Corner Project.</p>
+                                    <p class="card-text"><strong>Roles:</strong> Artistic Director, Co-Choreographer, Performer, Lighting Designer, Music Editor</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://youtu.be/wvvPnYraJXo" target="_none" class="card-link">LINK TO FULL VIDEO</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img class="card-img-top" src="img/TCP-BR.gif" alt="Movie Database Project">
+                                <h5 class="card-title">Behind Royalty</h5>
+                                <div class="card-body">
+                                    <p class="card-text">A dance set about struggling with self image, confidence, and finding yourself.</p>
+                                    <p class="card-text"><strong>Roles:</strong> Artistic Director, Choreographer, Performer, Lighting Designer</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://www.youtube.com/watch?v=0dyZ3f-abnE" target="_none" class="card-link">LINK TO FULL VIDEO</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img class="card-img-top" src="img/VMO-SL.gif" alt="Task Manager Project">
+                                <h5 class="card-title">Spotlights</h5>
+                                <div class="card-body">
+                                    <p class="card-text">A dance set about shining within the limitations we're given (filmed during COVID lockdown).</p>
+                                    <p class="card-text"><strong>Roles:</strong> Choreographer, Video Editor</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://youtu.be/ojSXhOqjC0k" target="_none" class="card-link">LINK TO FULL VIDEO</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+                </div></div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="container">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img class="card-img-top" src="img/redirectConcept.png" alt="Task Manager Project" />
+                                <h5 class="card-title">re.direct Music App Design</h5>
+                                <div class="card-body">
+                                    <p class="card-text">Full design and mockups created for DesignLab Design 101 course. Included creation of wireframes, logo iterations, and more. 
+                                        Designs created using Sketch.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img class="card-img-top" src="img/DC4Poster.png" alt="D Con-4 Online Program Website">
+                                <h5 class="card-title">D Con-4 Volume 2 Rebranding Posters</h5>
+                                <div class="card-body"> 
+                                    <p class="card-text">Design created for rebranding of D Con-4 Online program. Design was for Instagram posters that would subtly hint at an Avatar theme
+                                        for the second round of the program. Posters created using Sketch.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img class="card-img-top" src="img/DC4-V1.png" alt="Movie Database Project">
+                                <h5 class="card-title">D Con-4 Initial Branding</h5>
+                                <div class="card-body">
+                                    <p class="card-text">Initial branding designs created for logo, title, website calendar, and posters (for member spotlights). Designs created using Sketch.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center">
+                                <img class="card-img-top" src="img/SelfBrand.png" alt="Task Manager Project">
+                                <h5 class="card-title">Personal Site Website/Logo Design</h5>
+                                <div class="card-body"> 
+                                    <p class="card-text">Portfolio website design and logo creation with emphasis on font and color choices.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>   
+        </div>
+        <hr>
+        <br>
+        <div class="container">
+            <h1 class="work-title">Work Experience</h1>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <div class="card h-100 text-center">
+                                    <h5 class="job-title">CS@SC</h5>
+                                    <h6 class="job-subtitle">TEACHING ASSISTANT (January 2021 - Present)</h6>
+                                    <div class="card-body">
+                                        <p class="job-text"><strong>Job Duties: </strong></p>
+                                            <ul class="job-text">
+                                                <li>Taught classes of 4-6 kids, teaching web development (HTML/CSS) and Scratch depending on age group.</li>
+                                                <li>Shaped curriculum depending on comprehension of students and communicated student learning process with the camp directors.</li>
+                                                <li>Contributed ideas for how to improve learning process for children and how to help foster a passion for coding.</li>
+                                            </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 text-center">
+                                    <h5 class="job-title">AgilePoint</h5>
+                                    <h6 class="job-subtitle">Intern (May 2019 - August 2019)</h6>
+                                    <div class="card-body">
+                                        <p class="job-text"><strong>Job Duties: </strong></p>
+                                            <ul class="job-text">
+                                                <li>Built three automated applications incorporating REST API's, field mapping, 
+                                                    and other external concepts to expedite client organization’s data collection, analysis, and migration.</li>
+                                                <li>Collaborated with international design team during daily meetings to integrate front-end construction with back-end processes.</li>
+                                            </ul> 
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 text-center">
+                                    <h5 class="job-title">Relevance Labs</h5>
+                                    <h6 class="job-subtitle">DevOps Intern (June 2018 - August 2018)</h6>
+                                    <div class="card-body">
+                                        <p class="job-text"><strong>Job Duties: </strong></p>
+                                            <ul class="job-text">
+                                                <li>Developed proof of concept demonstrating data center migration to cloud using Terraform for infrastructure provisioning.</li>
+                                                <li>Analyzed JSON/CSV inventory files comprising details about Compute, Storage and basic Networking information.</li>
+                                                <li>Tested resilience of and deployed applications on multi-node clusters with Docker Swarm/ Kubernetes through Linux virtual machines.</li>
+                                                <li>Held weekly meetings with lead DevOps engineers to present testing results.</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+            </div>   
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        Copyright &copy; Rahul Joshi 2021 <br>
+        <a href="https://www.facebook.com/profile.php?id=100004289202416">
+            <i class="bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/rj900/">
+            <i class="bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rahul-joshi-00/">
+            <i class="bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/rahulpjo">
+            <i class="bi-github"></i>
+        </a>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>

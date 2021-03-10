@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Contact</title>
+    <link rel="icon" href="img/LOGO.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <style>
+        .contact-info{
+            text-align: center;
+        }
+        .contact-head{
+            padding: 0;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .contact-message{
+            width: 40vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait">
+                </div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="work.html" class="nav-link">Work</a>
+                    <ul class="dropdown-list hide">
+                        <li class="nav-item"><a href="work.html" class="nav-link">ART</a></li>
+                        <li class="nav-item"><a href="work.html" class="nav-link">DESIGN</a></li>
+                        <li class="nav-item"><a href="work.html" class="nav-link">ENGINEERING</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item current">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="leaveMessage">
+            <div class="leaveMessage-box">
+                <h2>You're about to leave the site!</h2>
+                <p>Are you sure you want to leave?</p>
+                <a href="https://dcon-4-merchandise.myshopify.com/" class="nav-link redlink">Open Link</a>
+                <a href="https://dcon-4-merchandise.myshopify.com/" target="_none" class="nav-link greenlink">Open Link in New Tab</a>
+                <a class="nav-link bluelink">Cancel</a>
+            </div>
+        </div>
+    </header>
+    
+    <main id="main">
+        <h1 class="page-title">Contact</h1>
+        <h4 class="page-subtitle">REACH OUT TO ME FOR INQUIRIES, BOOKING, AND MORE!</h4>
+        <div class="contact-info container">
+            <div class="row">
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                    <label>Your Name: <input type="text" name="name" required/></label><label>Your Email: <input type="email" name="email" required/></label>
+                    </p>
+                    <p>
+                        <label for="topic">Topic of Inquiry:
+                        <select id="topic" name="topic">
+                            <option value="">Please Select</option>
+                            <option value="webdev">Web Development</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="art">Artistic Direction</option>
+                            <option value="dance">Dance</option>
+                            <option value="design">Design</option>
+                            <option value="other">Other</option>
+                        </select></label>
+                        <label>If other, please specify: <input type="text" name="otherspec" /></label>
+                    </p>
+                    <p>
+                        <label>Message: <br><textarea name="message"></textarea></label>
+                    </p>
+                    <p class="center">
+                        <button type="submit">Send</button>
+                    </p>
+                </form>
+            </div>
+            <div class="row">
+                <hr>
+                <h3 class="contact-head">Note:</h3>
+                <p class="contact-message">I will do my best to get back to you within 48 hours. In the rare instance that a 
+                    response isn't received within that time frame, please feel free to reach out to me
+                    at the social media links provided at the bottom of the page!
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        Copyright &copy; Rahul Joshi 2021 <br>
+        <a href="https://www.facebook.com/profile.php?id=100004289202416">
+            <i class="bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/rj900/">
+            <i class="bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rahul-joshi-00/">
+            <i class="bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/rahulpjo">
+            <i class="bi-github"></i>
+        </a>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

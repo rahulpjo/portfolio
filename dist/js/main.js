@@ -75,30 +75,9 @@ function toggleMenu(){
 var tl = gsap.timeline();
 tl.from(".logo-large",{duration: 2, opacity:0, ease:"inOut"}, 0);
 tl.from(".lg-heading",{duration: 1.5, x:-500, opacity:0, ease:"inOut"}, 0);
+tl.from(".sm-heading",{duration: 1.5, x:-500, opacity:0, ease:"inOut"}, 0);
 tl.from(".home-facebook",{duration: 0.5, delay: 1, opacity:0}, "-=0.5");
 tl.from(".home-instagram",{duration: 0.5, opacity:0});
 tl.from(".home-linkedin",{duration: 0.5, opacity:0});
 tl.from(".home-github",{duration: 0.5, opacity:0});
 
-var tl2 = new TimelineMax({
-    paused:true
-  });
-  // letter animation
-  tl2.fromTo(".anim-typewriter", 2, {duration: 2,
-    width: "0", delay: 2
-  }, {
-    width: "30em", /* same as CSS .line-1 width */
-    ease:  SteppedEase.config(22)
-  }, 2);
-  // text cursor animation
-  tl2.fromTo(".anim-typewriter", 1, { 
-    "border-right-color": "rgba(255,255,255,0.75)"
-  }, {
-    "border-right-color": "rgba(255,255,255,0)",
-    repeat: 4,
-    delay: 2,
-    ease:  SteppedEase.config(37)
-  }, 0);
-  
-  tl2.play();
-  

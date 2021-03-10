@@ -71,7 +71,7 @@
       font-size: 1.2rem;
       display: block; }
     .menu-branding button {
-      padding: .5rem;
+      padding: 0.5rem;
       border: 2px solid #ebebeb;
       background-color: #171720;
       color: #ebebeb; }
@@ -180,13 +180,16 @@ h4 {
   color: #fa9057; }
 
 #home,
+#about,
 #main {
   background: #282838;
   color: #ebebeb; }
   #home img,
+  #about img,
   #main img {
     width: 100%; }
   #home .logo-large,
+  #about .logo-large,
   #main .logo-large {
     width: 50%;
     height: 50%;
@@ -195,25 +198,33 @@ h4 {
     margin-left: 50vw; }
     @media screen and (max-width: 850px) {
       #home .logo-large,
+      #about .logo-large,
       #main .logo-large {
         display: none; } }
 
 #main {
   min-height: calc(100vh - 80px); }
 
-#home {
+#home,
+#about {
   height: 100vh; }
 
-#home2 {
+#home2,
+#about2 {
   background: #3d3d56;
-  color: #fa9057;
+  color: #ebebeb;
   min-height: calc(100vh - 80px); }
   #home2 h1,
   #home2 h2,
   #home2 h3,
-  #home2 h4 {
+  #home2 h4,
+  #about2 h1,
+  #about2 h2,
+  #about2 h3,
+  #about2 h4 {
     color: #fa9057; }
-  #home2::first-letter {
+  #home2::first-letter,
+  #about2::first-letter {
     color: #ebebeb; }
 
 a {

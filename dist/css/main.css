@@ -385,6 +385,7 @@ button.nav-link {
   margin-right: auto; }
 
 form > div {
+  display: inline-block;
   margin-left: auto;
   margin-right: auto; }
 

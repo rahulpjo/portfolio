@@ -201,8 +201,7 @@ h4 {
 #main {
   min-height: calc(100vh - 80px); }
 
-#home,
-#about {
+#home {
   height: 100vh; }
 
 #home2,

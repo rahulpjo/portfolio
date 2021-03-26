@@ -13,6 +13,11 @@ const goButton = document.querySelectorAll('.go-button');
 
 const dropdown = document.querySelector('.dropdown');
 const dropdownList = document.querySelector('.dropdown-list');
+
+const showResume = document.getElementById('resume-display');
+const resumePU = document.querySelector('.resume-popup');
+const hideResume = document.getElementById('resume-button');
+
 for (let i = 0; i < cancel.length; i++){
     (cancel[i]).addEventListener('click', cancelWindow);
 }
@@ -72,6 +77,19 @@ function toggleMenu(){
         showMenu = false;
     }
 }
+
+showResume.addEventListener('click', displayResume);
+
+function displayResume(){
+    resumePU.classList.remove("hide");
+}
+
+hideResume.addEventListener('click', removeResume);
+
+function removeResume(){
+    resumePU.classList.add("hide");
+}
+
 var tl = gsap.timeline();
 tl.from(".logo-large",{duration: 2, opacity:0, ease:"inOut"}, 0);
 tl.from(".lg-heading",{duration: 1.5, x:-500, opacity:0, ease:"inOut"}, 0);

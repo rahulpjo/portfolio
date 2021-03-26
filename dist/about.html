@@ -43,17 +43,13 @@
                 </li>
             </ul>
         </nav>
-        <div class="leaveMessage">
-            <div class="leaveMessage-box">
-                <h2>You're about to leave the site!</h2>
-                <p>Are you sure you want to leave?</p>
-                <a href="https://dcon-4-merchandise.myshopify.com/" class="nav-link redlink">Open Link</a>
-                <a href="https://dcon-4-merchandise.myshopify.com/" target="_none" class="nav-link greenlink">Open Link in New Tab</a>
-                <a class="nav-link bluelink">Cancel</a>
-            </div>
-        </div>
     </header>
-    
+    <div class="resume-popup hide">
+        <div class="resume-box">
+            <img src="img/SiteResume.png" alt="Rahul Joshi Resume" />
+            <button id="resume-button">GO BACK</button>
+        </div>
+    </div>
     <main id="about">
         <h1 class="page-title">About</h1>
         <h4 class="page-subtitle">WHO I AM, WHAT I DO, AND WHY</h4>
@@ -72,8 +68,8 @@
                     </p>
                     <div class="buttons align-items-center">
                         <div class="card-footer">
-                            <a href="#" class="card-link">MY RESUME</a>
-                            <a href="work.html" class="card-link">SEE MY PAST WORK</a>
+                            <button id="resume-display">MY RESUME</button>
+                            <button onclick="location.href='work.html'" type="button">SEE MY PAST WORK</button>
                         </div>
                     </div>
                 </div>

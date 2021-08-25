@@ -1,0 +1,43 @@
+.home {
+  display: flex;
+  width: 100vw;
+  min-height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-heading,
+.top-projects {
+  display: flex;
+}
+.home-projects-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-text h1 {
+  font-size: 5rem;
+  margin-bottom: -20px;
+}
+
+.home-text h4 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+.home-text {
+  margin: 0 10px;
+}
+.home-img {
+  margin: 20px 10px;
+  width: 200px;
+}
+
+.top-projects {
+  margin: 0 0 40px;
+}

@@ -1,0 +1,24 @@
+.project-card {
+  margin: 20px;
+  width: 250px;
+  height: 250px;
+  background-color: #2828389b;
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  border-radius: 7px;
+}
+
+.project-card h3 {
+  transition: all 0.5s ease-in-out;
+}
+
+.project-card:hover {
+  background-color: #282838df;
+}
+
+.project-card:hover h3 {
+  color: #fa9057;
+}

@@ -1,0 +1,53 @@
+.project {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  background-color: beige;
+}
+
+.project p {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.project > .tags {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.tag {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 10px;
+  border-radius: 20px;
+  background-color: white;
+  transition: all 0.5s ease-out;
+}
+.tag:hover {
+  transform: scale(1.1);
+}
+.links {
+  display: flex;
+  justify-content: center;
+}
+.links > * {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.5s ease-out;
+  font-size: 16px;
+  cursor: pointer;
+}
+.links > *:hover {
+  background-color: rgba(0, 0, 0, 0.756);
+}

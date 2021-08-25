@@ -1,0 +1,78 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-intro {
+  padding: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+hr {
+  color: white;
+  width: 90%;
+  margin-bottom: 40px;
+}
+.about-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.about-text {
+  min-width: 600px;
+  width: 50%;
+}
+
+.about-text .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0;
+}
+
+.about-text .buttons * {
+  background-color: #fa9057;
+  color: #282838;
+  font-size: 1.3rem;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.about-policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-policy-section {
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+
+.about-policy-section ul {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+  .about-intro {
+    flex-direction: column;
+  }
+  .about-policy {
+    padding: 0 20px;
+  }
+  .about-text,
+  .about-text .buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about-text {
+    min-width: fit-content;
+    width: 90%;
+  }
+}

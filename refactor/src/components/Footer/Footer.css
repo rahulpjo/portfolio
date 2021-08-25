@@ -1,0 +1,17 @@
+footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+footer > h4 {
+  margin-bottom: 5px;
+}
+
+footer > .social-icons > * {
+  margin: 5px 10px;
+}

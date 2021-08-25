@@ -1,0 +1,18 @@
+.project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-section > :nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.project-section > :nth-child(even) > .project-text {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.project-section > :nth-child(even) > .project-text > .tags {
+  justify-content: flex-end;
+}

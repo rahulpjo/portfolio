@@ -8,6 +8,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
   const encode = (data) => {
     return Object.keys(data)
       .map(
@@ -28,9 +29,16 @@ const Contact = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", formData }),
+      body: encode({ "form-name": "contact", ...formData }),
     })
-      .then(() => alert("Success!"))
+      .then(() => {
+        alert("Success!");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
       .catch((error) => alert(error));
 
     e.preventDefault();

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Project.css";
 
 const Project = ({ project, id }) => {
@@ -9,7 +10,9 @@ const Project = ({ project, id }) => {
         <img src={media_url} alt={name} />
       </div>
       <div className="project-text">
-        <h2 className="orange">{name}</h2>
+        <Link to={`/project/${id}`}>
+          <h2 className="orange">{name}</h2>
+        </Link>
         <p>{description}</p>
         {github || website ? (
           <div className="links">

@@ -28,6 +28,10 @@
   margin: 0 10px;
 }
 
+.project-text h2:hover {
+  text-decoration: underline;
+}
+
 .project-text p {
   margin-bottom: 5px;
 }

@@ -28,6 +28,7 @@ hr {
 .about-text .buttons {
   width: 100%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   margin: 10px 0;
 }
@@ -71,8 +72,15 @@ hr {
 }
 
 @media screen and (max-width: 640px) {
+  .about-intro {
+    width: 90%;
+  }
   .about-text {
     min-width: fit-content;
-    width: 90%;
+    width: 100%;
+  }
+  .about-img {
+    width: 100%;
+    height: auto;
   }
 }

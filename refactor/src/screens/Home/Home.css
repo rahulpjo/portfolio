@@ -9,6 +9,8 @@
 .home-heading,
 .top-projects {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 .home-projects-section {
   margin-top: 20px;
@@ -40,4 +42,33 @@
 
 .top-projects {
   margin: 0 0 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .home-heading {
+    flex-direction: column;
+  }
+  .home-text {
+    align-items: center;
+    text-align: center;
+  }
+  .home-projects-section h2 {
+    font-size: 1.4rem;
+  }
+  .home-projects-section {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .home-heading {
+    flex-direction: column;
+  }
+  .home-text h1 {
+    font-size: 3.7rem;
+  }
+  .home-text h4 {
+    font-size: 1.3rem;
+  }
 }

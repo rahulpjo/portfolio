@@ -33,7 +33,6 @@ form *:not(label) {
 .contact-form button {
   background-color: #fa9057;
   color: #282838;
-  text-transform: uppercase;
   padding: 5px 10px;
   border-radius: 7px;
   border: none;
@@ -48,8 +47,12 @@ form *:not(label) {
 }
 
 .contact-form input,
-.contact-form textarea,
-.contact-form select {
+.contact-form textarea {
   font-size: 1.2rem;
   padding: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline-color: #fa9057;
 }

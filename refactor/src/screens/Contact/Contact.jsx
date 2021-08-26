@@ -1,7 +1,41 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", formData }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+  };
+
   return (
     <motion.div
       className="contact"
@@ -25,20 +59,37 @@ const Contact = () => {
       </h3>
 
       <div className="contact-form">
-        <form name="contact" method="POST" data-netlify="true">
+        <form onSubmit={handleSubmit}>
           <p>
             <label>
-              Your Name&nbsp; <input type="text" name="name" />
+              Your Name&nbsp;{" "}
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+              />
             </label>
           </p>
           <p>
             <label>
-              Your Email&nbsp; <input type="email" name="email" />
+              Your Email&nbsp;{" "}
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+              />
             </label>
           </p>
           <p>
             <label>
-              Message&nbsp; <textarea name="message"></textarea>
+              Message&nbsp;{" "}
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+              ></textarea>
             </label>
           </p>
           <p>

@@ -34,6 +34,11 @@ const Contact = () => {
       .catch((error) => alert(error));
 
     e.preventDefault();
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (

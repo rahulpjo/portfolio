@@ -1,8 +1,16 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Experience from "../../components/Experience/Experience";
+import { getExperience } from "../../data/workexperience";
 import "./About.css";
 
 const About = () => {
+  const [work, setWork] = useState([]);
+  useEffect(() => {
+    const data = getExperience();
+    setWork(data);
+  }, []);
   return (
     <motion.div
       className="about"
@@ -35,24 +43,31 @@ const About = () => {
             kids about web development and Scratch. I also worked for CS@SC as
             their content designer and social media manager, so I also have
             experience in design. The programming languages I'm familiar with
-            are JavaScript, Python, HTML/CSS, SQL, C++, and Verilog, and I'm
-            familiar with frameworks like Bootstrap, React.js, and Express.js.
-            Apart from the Software Engineering Immersive that I recently
-            completed with General Assembly, I've also taken classes at USC that
-            deal with software engineering, such as Data Structures and
-            Object-Oriented Programming, Discrete Methods for Computer Science,
-            and Web Architecture. I've also completed an online course from
-            Designlab in UI/UX Design, which I apply to my work in front-end
-            development. With design, I'm most familiar with Adobe Illustration,
-            Adobe XD, and Sketch. Overall, I am a student at heart and aim to
-            never stop learning no matter what discipline, so that I can
-            constantly grow.
+            are JavaScript, Ruby, Python, HTML/CSS, SQL, C++, and Verilog, and
+            I'm familiar with libraries/frameworks like Bootstrap, React.js,
+            Rails, and Express.js. Apart from the Software Engineering Immersive
+            that I recently completed with General Assembly, I've also taken
+            classes at USC that deal with software engineering, such as Data
+            Structures and Object-Oriented Programming, Discrete Methods for
+            Computer Science, and Web Architecture. I've also completed an
+            online course from Designlab in UI/UX Design, which I apply to my
+            work in front-end development. With design, I'm most familiar with
+            Adobe Illustrator, Adobe XD, and Sketch. Overall, I am a student at
+            heart and aim to never stop learning no matter what discipline, so
+            that I can constantly grow.
           </p>
           <div className="buttons">
             <Link to="/resume">MY RESUME</Link>
             <Link to="/work">SEE MY PAST WORK</Link>
           </div>
         </div>
+      </section>
+      <hr />
+      <section className="about-work-experience">
+        <h2 className="orange">Work Experience</h2>
+        {work?.map((experience, index) => (
+          <Experience key={index} experience={experience} />
+        ))}
       </section>
       <hr />
       <section className="about-policy">

@@ -4,7 +4,10 @@ const Header = () => {
   return (
     <header>
       <div className="header-logo">
-        <img src="img/LOGO.svg" alt="Rahul Joshi logo" />
+        <img
+          src="https://www.rahulpjoshi.com/img/LOGO.svg"
+          alt="Rahul Joshi logo"
+        />
       </div>
       <nav>
         <NavLink exact activeClassName="orange" to="/">

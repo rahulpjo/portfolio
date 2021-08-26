@@ -41,7 +41,12 @@ hr {
   padding: 5px 10px;
   border-radius: 6px;
 }
-
+.about-work-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
 .about-policy {
   display: flex;
   flex-direction: column;

@@ -115,7 +115,7 @@ const projects = [
       "Project created to practice API calls using ajax function in JavaScript and parsing JSON. Landing page displays now playing movies and search bar will search for all movies with the key word. Project also focused on being responsive by using Bootstrap.",
     github: "https://github.com/rahulpjo/movie-db",
     website: "https://moviedb-rahuljoshi.netlify.app/",
-    media_url: "img/MovieDB.gif",
+    media_url: "https://www.rahulpjoshi.com/img/MovieDB.gif",
     type: "engineering",
     tags: [
       "HTML",
@@ -133,7 +133,7 @@ const projects = [
       "Project made to learn about the MERN stack (MongoDB, Express, React, Node.js) and increase practice with the React framework. The project is still in production and is being done by learning from Brad Traversy on Udemy.",
     github: "https://github.com/rahulpjo/mern-ecommerce-app",
     website: "",
-    media_url: "img/MERN.gif",
+    media_url: "https://www.rahulpjoshi.com/img/MERN.gif",
     type: "engineering",
     tags: [
       "React.js",

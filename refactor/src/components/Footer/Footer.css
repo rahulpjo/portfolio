@@ -10,8 +10,17 @@ footer {
 
 footer > h4 {
   margin-bottom: 5px;
+  color: #fa9057;
 }
 
 footer > .social-icons > * {
   margin: 5px 10px;
+}
+
+footer > .social-icons > a * {
+  transition: all 0.5s ease-out;
+}
+
+footer > .social-icons > :hover * {
+  color: #fa9057;
 }

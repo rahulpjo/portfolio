@@ -32,29 +32,7 @@ const About = () => {
         <div className="about-text">
           <h2 className="orange">Hi, I'm Rahul Joshi!</h2>
           <p>
-            I’m a full-stack engineer who is in his element when he can
-            creatively solve problems. I’m a passionate and precise learner with
-            a degree in electrical engineering, who is motivated by innovation,
-            building/ strengthening connections, and social good. I'm currently
-            looking for a full-time position as a full stack, front-end, or
-            back-end developer/engineer. I have internship experience in DevOps,
-            app development (mostly using Python), and I was more recently a
-            Teaching Assistant at USC for a camp called CS@SC, where I taught
-            kids about web development and Scratch. I also worked for CS@SC as
-            their content designer and social media manager, so I also have
-            experience in design. The programming languages I'm familiar with
-            are JavaScript, Ruby, Python, HTML/CSS, SQL, C++, and Verilog, and
-            I'm familiar with libraries/frameworks like Bootstrap, React.js,
-            Rails, and Express.js. Apart from the Software Engineering Immersive
-            that I recently completed with General Assembly, I've also taken
-            classes at USC that deal with software engineering, such as Data
-            Structures and Object-Oriented Programming, Discrete Methods for
-            Computer Science, and Web Architecture. I've also completed an
-            online course from Designlab in UI/UX Design, which I apply to my
-            work in front-end development. With design, I'm most familiar with
-            Adobe Illustrator, Adobe XD, and Sketch. Overall, I am a student at
-            heart and aim to never stop learning no matter what discipline, so
-            that I can constantly grow.
+            Forward-thinking and dynamic professional with hands-on experience in software engineering, front-/back-end, full-stack development, as well as team-building and leadership. Success in directing full life cycle of software and full-stack development processes, including requirements engineering, design, coding, testing, debugging, and maintenance. Highly skilled in resolving technical issues, devising technical solutions, and helping teams to achieve shared visions and goals. Well-versed in software development, web services, database management, as well as system and data analysis. Fast learner with proven ability to quickly master new programming languages, frameworks, tools, and client systems and software. Expertise in agile methodology, API integration, full stack architecture, integration testing, and CI/CD pipeline.
           </p>
           <div className="buttons">
             <Link to="/resume">MY RESUME</Link>

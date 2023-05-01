@@ -1,5 +1,21 @@
 const experience = [
   {
+    role: "Software Engineer II/Software Engineer I",
+    company: "Market fka Trust.co",
+    type: "Full-Time",
+    dates: "Nov 2021 - Jan 2023",
+    description:
+      "- Developed core full-stack features with React, FastAPI, and third-party API integrations for multiple financial applications. Implemented third-party API integration with Stripe, Plaid, AWS, and Middesk. Developed and proposed testing suites for four core objects in back end. Restructured front-end querying implementation with 40-50 restructured API calls total, containing 10 core objects with 4-5 separate API calls per object. Built four main views in V1 of the company's main financial product.\n- Increased application efficiency via consistent process improvement, including full-text search for internal tools that resulted in reducing search time by 50%.\n- Built over 50% of full stack prototype of financial product for high-value clients to secure six verbal/formal agreements of product integration into Client Company’s workflow.",
+  },
+  {
+    role: "Full Stack Developer/Content Designer",
+    company: "Evolve",
+    type: "Part-Time",
+    dates: "Sep 2021 - Dec 2021",
+    description:
+      "- Create digital assets across social media platforms using Adobe Illustrator, Photoshop, or other graphic generating platforms.\n- Assist in implementing website build, features, SEO, and designs.\n- Conduct internal QA testing within mobile app and website functionalities to detect bugs/issues and suggest changes according to UI/UX findings.\n- Understand and suggest mobile app functions and implement using Flutter.\n- Work with the software development team and third-party vendors to code, design, and create Flutter code.",
+  },
+  {
     role: "Software Engineering Fellow",
     company: "General Assembly",
     type: "Full-Time",

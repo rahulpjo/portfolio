@@ -6,7 +6,7 @@ const Experience = ({ experience }) => {
   return (
     <article className="experience">
       <h3>
-        <span className="orange">{role}</span> ({company})
+        <span className="orange">{role}</span> {company}
       </h3>
       <h6>
         {type} • {dates}

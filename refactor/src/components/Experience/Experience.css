@@ -1,7 +1,11 @@
 .experience {
-  max-width: 800px;
+  width: 800px;
   background-color: black;
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
+}
+
+.experience h6 {
+  margin: 5px 0;
 }

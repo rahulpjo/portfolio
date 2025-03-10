@@ -1,5 +1,13 @@
 const experience = [
   {
+    role: "Software Engineer",
+    company: "Formally",
+    type: "Full-Time",
+    dates: "Jun 2023 - Jan 2025",
+    description:
+      "- Played key role in building two AI products for document data extraction, questionnaire building, and status alerting\n- Led the implementation of multi-factor authentication and single sign-on, onboarding over 100 users with added security\n- Led the creation of a new task system with side effects and automatic status updates, making key decisions about design and user experience through the process\n- Created and managed a feature called data profiles, a centralized hub of information that allowed attorneys to view, create, and edit core parts of a client's information, regarded as a key feature by many attorneys using the product",
+  },
+  {
     role: "Software Engineer II/Software Engineer I",
     company: "Market fka Trust.co",
     type: "Full-Time",

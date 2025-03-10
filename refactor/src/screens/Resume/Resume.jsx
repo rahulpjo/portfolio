@@ -9,7 +9,7 @@ const Resume = () => {
   };
   return (
     <div className="resume">
-      <embed src="img/RahulJoshiResume.pdf" width="600px" height="90%" />
+      <embed src="img/RahulJoshiResume2025.pdf" width="600px" height="90%" />
       <button onClick={handleClick} className="back-button">
         <BiArrowBack />
         &nbsp;Go Back
